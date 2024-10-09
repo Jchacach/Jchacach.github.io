@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap&#39');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    list-style: none;
+    text-decoration: NONE;
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    background-color: #fefefe;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu img{
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.header{
+    background-image: url(imagenes/Fondo.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+}
+.about2{
+    width: 80%;
+    padding: 90px;
+    text-align: left;
+}
+.about3{
+    width: 80%;
+    padding: 90px;
+    text-align: center;
+}
+
+.about-txt1{
+    text-align: center;
+    width: 80%;
+    padding: 90px
+}
+
+    
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+    padding-left: 10px;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #fff;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a{
+    color: #fff;
+}
+.menu .navbar ul li a:hover{
+    background-color: #fff;
+    color: #101010;
+}
+#menu{
+    display: none;
+}
+
+.menu .menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    padding-top: 100px;
+    width: 100%;
+}
+
+.header-txt{
+    width: 100%;
+}
+.header-txt p{
+    color: #fff;
+    font-size: 25px;
+}
+
+
+.header-txt h1{
+    font-size: 110px;
+    line-height: 110px;
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 13px 35px;
+    background-color: #e83d2c;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 15px;
+}
+
+.btn-1:hover{
+    background-color: #fa402f;
+}
+
+.about{
+    padding: 100px 0 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.about-img{
+    width: 50%;
+    text-align: center;
+}
+
+.about-img img{
+    height: 700px;
+}
+
+.about-txt{
+    width: 50%;
+}
+
+h2{
+    font-size: 55px;
+    line-height: 70px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color: #101010;
+}
+
+p{
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 25px;
+}
+.esquema{
+    margin-top: 20px;
+}
+.footer{
+    border-top: 1px solid #1B1B1B;
+    padding: 20px 0;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-content ul {
+    display: flex;
+}
+.footer-content ul li a{
+    display: block;
+    padding: 10px;
+    color: #1B1B1B;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer-content ul li a:hover{
+    color: #F38004;
+}
+
+@media(max-width:991px){
+    .menu{
+        padding: 20px;
+        position: relative;
+    }
+    .menu label{
+        display: inline;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ff5a2f;
+        display: none;
+    }
+    .menu .navbar ul{
+        flex-direction: column;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+        padding: 20px 0 ;
+    }
+    .menu .navbar ul li a:hover{
+        color: #FFFFFF;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .header-content{
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-txt{
+        padding: 0 0 40px 0 ;
+    }
+    .about{
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-img{
+        align-content: center;
+    }
+    .services{
+        padding: 30px;
+    }
+    .services-content{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .products{
+        padding: 30px;
+    }
+    .products-content{
+        margin-top: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .testimonio{
+        padding: 30px;
+    }
+    .testimonio-content{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .testimonio-1{
+        margin-bottom: 30px;
+    }
+    .footer{
+        padding: 30px;
+    }
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .link{
+        margin-bottom: 25px;
+    }
+
+    .about2{
+        padding: 30px;
+        flex-direction: column;
+    }
+}
+    
+
+
